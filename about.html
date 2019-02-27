@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CustomProperties.css">
+	<title>Keystone Inmobiliaria</title>
+</head>
+<body>
+	<div class="header">
+				<div class="socialMH">
+		<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
+		<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
+		</div>
+		<ion-icon name="call" class="phone"></ion-icon>
+		<div class="flex-column">
+			<h3> 0261 7912068 </h3>
+			<h3> 0261 7933842 </h3>
+			<h3> 0414 9662206 </h3>
+	    </div>
+		<img src="images/banner.jpg" class="banner">
+	</div>
+	<div class="">
+		<ul class="nav">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="inmuebles.html">Inmuebles</a></li>
+			<li><a href="">Contacto</a></li>
+			<li><a href="agentes.html">Agentes</a></li>
+			<li class="ingresar"><a href="login.html">Ingresar</a></li>
+		</ul>
+	</div>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<div class="container">
+		<div class="row">
+			<img src="images/profile.jpg" class="profile-img">
+			<h2>Luis Eduardo Machado</h2>
+			<button class="details-btn">Ver Perfil</button>
+		</div>
+				<div class="row">
+			<img src="images/profile.jpg" class="profile-img">
+			<h2>Luis Eduardo Machado</h2>
+			<button class="details-btn">Ver Perfil</button>
+		</div>
+				<div class="row">
+			<img src="images/profile.jpg" class="profile-img">
+			<h2>Luis Eduardo Machado</h2>
+			<button class="details-btn">Ver Perfil</button>
+		</div>
+	</div>
+	<div id="pModal" class="modal">
+	<div id ="profile-content" class="animated bounceInDown">
+		<span class="close">&times;</span>
+		<div class="centered">
+			<img src="images/profile.jpg" id="profile-image">
+		</div>
+		<br>
+		<div class="centered">
+			<h2 id="username">
+				Luis Eduardo Machado
+			</h2>
+		</div>
+		<br>
+		<div class="centered">
+			<h2 id="numero-telefono">
+				04146301822
+			</h2>
+		</div>
+		<br>
+		<div class="centered">
+			<h2 id="email">
+				luiseduardove@gmail.com
+			</h2>
+		</div>
+		<br>
+		<div class="centered">
+			<p id="about">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<footer>
+		<div class="container">
+			<img src="images/logo-01.png" class="footer-img">
+			<div class="column">
+				<h3>
+					<a href="">
+						Nosotros
+					</a>
+				</h3>
+				<br>
+				<h3>
+					<a href="">
+						Contacto
+					</a>
+				</h3>
+				<br>
+				<h3>
+					<a href="">
+						Inmuebles
+					</a>
+				</h3>
+				<br>
+				<h3>
+					<a href="index.html">
+						Inicio
+					</a>
+				</h3>
+			</div>
+			<div class="column">
+				<h3>
+					Siguenos
+				</h3>
+				<div class="details">
+						<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
+						<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
+				</div>
+			</div>
+			<div>
+				<h3>
+					Contactanos
+				</h3>
+				<div class="details">
+					<ion-icon name="mail" class="socialM"></ion-icon>
+					<h3>
+						keystoneinmobiliaria@gmail.com
+					</h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+<script>
+var profilemodal = document.getElementById('pModal');
+var profileButton = document.getElementById('pButton');
+var span = document.getElementsByClassName("close")[0];
+profileButton.onclick = function() {
+  profilemodal.style.display = "block";
+}
+span.onclick = function() {
+  profilemodal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == profilemodal) {
+    profilemodal.style.display = "none";
+  }
+}
+</body>
+</html>

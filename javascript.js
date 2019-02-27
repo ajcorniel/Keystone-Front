@@ -19,8 +19,47 @@ function seeSlides() {
 
 seeSlides();
 
+var inmueblemodal = document.getElementById('myModal');
+var profilemodal = document.getElementById('pModal');
 
-  function show() { 
-  document.getElementById('p').className = ""; 
-            }
+var inmuebleButton = document.getElementById('myBtn');
+var profileButton = document.getElementById('pButton');
 
+var span = document.getElementsByClassName("close")[0];
+
+
+inmuebleButton.onclick = function() {
+  inmueblemodal.style.display = "block";
+}
+
+profileButton.onclick = function() {
+  profilemodal.style.display = "block";
+}
+
+span.onclick = function() {
+  inmueblemodal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == inmueblemodal) {
+    inmueblemodal.style.display = "none";
+  }
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("showPics");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}

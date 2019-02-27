@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="CustomProperties.css">
-	<title>Keystone Inmobiliaria</title>
+	<title></title>
 </head>
 <body>
-	<div class="header">
-		<div class="socialMH">
+		<div class="header">
+					<div class="socialMH">
 		<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
 		<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
 		</div>
@@ -21,52 +21,65 @@
 	</div>
 	<div class="">
 		<ul class="nav">
+			<li><a href="index.html">Inicio</a></li>
 			<li><a href="about.html">Nosotros</a></li>
-			<li><a href="inmuebles.html">Inmuebles</a></li>
 			<li><a href="">Contacto</a></li>
 			<li><a href="agentes.html">Agentes</a></li>
 			<li class="ingresar"><a href="login.html">Ingresar</a></li>
 		</ul>
 	</div>
-	<div class="slideshow-container">
-
-  <div class="mySlides fade">
-    <img src="images/carrete1.png" class="c-img">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/carrete3.png" class="c-img">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/c2.jpg" class="c-img">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/c4.jpg" class="c-img">
-  </div>
-
-  <div class="mySlides fade">
-    <img src="images/c5.jpg" class="c-img">
-  </div>
+	<br>
+	<br>
+	<br>
+	<div class="container">
+  <form action="action_page.php">
+    <div class="search">
+      <div class="col-25">
+        <label for="price">Precio máximo ($)</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="price" name="Precio">
+      </div>
+    </div>
+    <div class="search">
+      <div class="col-25">
+        <label for="m2">Metros cuadrados mínimos</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="metros2" name="Metros cuadrados">
+      </div>
+    </div>
+    <div class="search">
+      <div class="col-25">
+        <label for="operation">Tipo de operación</label>
+      </div>
+      <div class="col-75">
+        <select id="operation" name="operation">
+          <option value="venta">Venta</option>
+          <option value="alquiler">Alquiler</option>
+        </select>
+      </div>
+    </div>
+        <div class="search">
+      <div class="col-25">
+        <label for="type">Tipo de inmueble</label>
+      </div>
+      <div class="col-75">
+        <select id="type" name="type">
+          <option value="casa">Casa</option>
+          <option value="apartamento">Apartamento</option>
+        </select>
+      </div>
+    </div>
+    <div class="search">
+      <input type="submit" value="Buscar" id="search-btn">
+    </div>
+  </form>
 </div>
 <br>
-
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>
-	<br>
-	<h2>
-		Propiedades recientes
-		<div class="resaltar">
-				en venta
-		</div>
-	</h2>
+<br>
+<br>
+<br>
 	<div class="container">
 		<div class="row">
 			<h3>
@@ -314,7 +327,7 @@
 					M2: 120
 				</h5>
 			</div>
-			<div class="jsBtnContainer">
+			<div>
 				<button class="details-btn" onclick="">
 					Detalles
 				</button>
@@ -433,91 +446,14 @@
 		</div>
 		</div>
 </div>
-
-<button id="myBtn">Modal</button>
-		
-	</div>
-	</div>
-	<div class="wrapper">
-		<a href="inmuebles.html"><button class="verMas"> ver mas</button></a>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<h2>
-		Agentes
-	</h2>
-	<div class="container">
-		<div class="row">
-			<img src="images/profile.jpg" class="profile-img">
-			<h2>Luis Eduardo Machado</h2>
-			<button class="details-btn">Ver Perfil</button>
-		</div>
-				<div class="row">
-			<img src="images/profile.jpg" class="profile-img">
-			<h2>Luis Eduardo Machado</h2>
-			<button class="details-btn">Ver Perfil</button>
-		</div>
-				<div class="row">
-			<img src="images/profile.jpg" class="profile-img">
-			<h2>Luis Eduardo Machado</h2>
-			<button class="details-btn">Ver Perfil</button>
-		</div>
-	</div>
-	<div id="pModal" class="modal">
-	<div id ="profile-content" class="animated bounceInDown">
-		<span class="close">&times;</span>
-		<div class="centered">
-			<img src="images/profile.jpg" id="profile-image">
-		</div>
-		<br>
-		<div class="centered">
-			<h2 id="username">
-				Luis Eduardo Machado
-			</h2>
-		</div>
-		<br>
-		<div class="centered">
-			<h2 id="numero-telefono">
-				04146301822
-			</h2>
-		</div>
-		<br>
-		<div class="centered">
-			<h2 id="email">
-				luiseduardove@gmail.com
-			</h2>
-		</div>
-		<br>
-		<div class="centered">
-			<p id="about">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
-	</div>
 </div>
-		<button id="pButton">
-			Modal
-		</button>
-	<div>
-		
-	</div>
-	<br>
-	<div class="wrapper">
-		<a href="agentes.html"><button class="verMas"> ver mas</button></a>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
 	<footer>
-		<img src="">
 		<div class="container">
 			<img src="images/logo-01.png" class="footer-img">
 			<div class="column">
@@ -567,7 +503,7 @@
 			</div>
 		</div>
 	</footer>
+<script type="text/javascript" href="javascript.js"></script>
 <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-<script type="text/javascript" src="javascript.js"></script>
 </body>
 </html>
