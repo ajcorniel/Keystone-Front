@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="CustomProperties.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Keystone Inmobiliaria</title>
 </head>
 <body>
@@ -11,23 +11,17 @@
 		<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
 		<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
 		</div>
-		<ion-icon name="call" class="phone"></ion-icon>
-		<div class="flex-column">
-			<h3> 0261 7912068 </h3>
-			<h3> 0261 7933842 </h3>
-			<h3> 0414 9662206 </h3>
-	    </div>
-		<img src="images/banner.jpg" class="banner">
+		<img src="images/banner2.jpg" style="height: 19rem;
+		                                     width: var(--percent-100);
+                                             margin: var(--rem-0);
+                                             padding: var(--rem-0);" >
 	</div>
-	<div class="">
 		<ul class="nav">
 			<li><a href="about.html">Nosotros</a></li>
 			<li><a href="inmuebles.html">Inmuebles</a></li>
-			<li><a href="">Contacto</a></li>
 			<li><a href="agentes.html">Agentes</a></li>
 			<li class="ingresar"><a href="login.html">Ingresar</a></li>
 		</ul>
-	</div>
 	<div class="slideshow-container">
 
   <div class="mySlides fade">
@@ -35,23 +29,26 @@
   </div>
 
   <div class="mySlides fade">
-    <img src="images/carrete3.png" class="c-img">
+    <img src="images/carrete2.jpg" class="c-img">
   </div>
 
   <div class="mySlides fade">
-    <img src="images/c2.jpg" class="c-img">
+  	<img src="images/carrete3.png" class="c-img">
   </div>
 
   <div class="mySlides fade">
-    <img src="images/c4.jpg" class="c-img">
+  	<img src="images/carrete4.jpg" class="c-img"> 	
+  </div>
+
+   <div class="mySlides fade">
+  	<img src="images/carrete5.jpg" class="c-img"> 	
   </div>
 
   <div class="mySlides fade">
-    <img src="images/c5.jpg" class="c-img">
+  	<img src="images/carrete6.jpg" class="c-img"> 	
   </div>
 </div>
 <br>
-
 
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span> 
@@ -59,6 +56,7 @@
   <span class="dot" onclick="currentSlide(3)"></span>
   <span class="dot" onclick="currentSlide(4)"></span>
   <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
 </div>
 	<br>
 	<h2>
@@ -421,9 +419,6 @@
 				</p>
 		</div>
 			<div id="user-post">
-				<h2 class="top-padding">
-					Publicado por:
-				</h2>
 			<img src="images/profile.jpg" class="details-user-image">
 			<div>
 				<h2>Luis Machado</h2>
@@ -433,11 +428,10 @@
 		</div>
 		</div>
 </div>
-
-<button id="myBtn">Modal</button>
 		
 	</div>
 	</div>
+	<button id="myBtn">Modal</button>
 	<div class="wrapper">
 		<a href="inmuebles.html"><button class="verMas"> ver mas</button></a>
 	</div>
@@ -517,10 +511,9 @@
 	<br>
 	<br>
 	<footer>
-		<img src="">
 		<div class="container">
-			<img src="images/logo-01.png" class="footer-img">
-			<div class="column">
+			<img src="images/logo-02.png" class="footer-img">
+			<div class="flex-column">
 				<h3>
 					<a href="">
 						Nosotros
@@ -545,25 +538,22 @@
 					</a>
 				</h3>
 			</div>
-			<div class="column">
+			<div class="flex-column">
 				<h3>
 					Siguenos
 				</h3>
-				<div class="details">
+					<div class="container">
 						<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
 						<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
-				</div>
+					</div>
 			</div>
 			<div>
 				<h3>
 					Contactanos
 				</h3>
-				<div class="details">
-					<ion-icon name="mail" class="socialM"></ion-icon>
 					<h3>
 						keystoneinmobiliaria@gmail.com
 					</h3>
-				</div>
 			</div>
 		</div>
 	</footer>

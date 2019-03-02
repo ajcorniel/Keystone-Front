@@ -458,7 +458,7 @@
 	vertical-align: var(--top);
 }
 
-.flex-column {
+.column {
 	font-family: var(--default-font-family);
 	position: var(--secondary-position);
 	color: var(--default-bgColor);
