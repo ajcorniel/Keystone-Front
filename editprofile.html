@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<title>Ingresa - Keystone Inmobiliaria</title>
+	<title>Editar Perfil</title>
 </head>
 <body>
-	<div class="header">
-		<img src="images/logo-02.png" class="logo">
+		<div class="header">
 		<div class="socialMH1">
 			<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
 			<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
 		</div>
+		<img src="images/logo-02.png" class="logo">
+
 		<ion-icon name="call" class="phone"></ion-icon>
 		<div class="contact-numbers">
 			<h4>
@@ -31,53 +31,57 @@
 		<img src="images/banner3.jpg" class="banner">
 
 		<nav class="navbar navbar-dark bg-primary">
-			<a href="index.html" class="nav-element">Inicio</a>			
-			<a href="about.html" class="nav-element">Nosotros</a>
-			<a href="inmuebles.html" class="nav-element">Inmuebles</a>
-			<a href="agentes.html" class="nav-element">Agentes</a>
+			<a id="user" class="nav-element" href="editprofile.html">
+				<img src="images/profile.jpg" class="shortcut-img">
+				Luis69
+			</a>
+			<a href="user.html" class="nav-element">Inmuebles</a>
+			<a href="upload.html" class="nav-element">Subir inmueble</a>
+			<a href="singup.html" class="nav-element">Registrar nuevo usuario</a>
+			<a href="index.html" class="nav-element">Cerrar sesion</a>
 		</nav>
 	</div>
 
-  <div class="AAcontainer">
-  	<div class="login-form">
-    	<form action="action_page.php">
-  			<div class="imgcontainer">
-    			<img src="images/avatar.jpg" alt="avatar.jpg" class="avatar">
-  			</div>
-    		<label for="uname"><b>Usuario</b></label>
-    		<input type="text" placeholder="Enter Username" name="uname" required>
+  <div class="code-searcher">
+	<form>
+		
+	  <div>
+        <label for="name">Nombre</label>
+      <div class="col-75">
+        <input type="text" id="name" name="Name">
+      </div>
+    </div>
 
-    		<label for="psw"><b>Password</b></label>
-    		<input type="password" placeholder="Enter Password" name="psw" required>
-    		<div class="space-between">
-    			<label>
-      				<input type="checkbox" checked="checked" name="remember"> Recordar mis datos
-    			</label>
-    			<button type="submit" class="btn-outline-success">Iniciar sesión</button>
-    		</div>
-		</form>
+       <div>
+        <label for="Pnumber">Numero de telefono</label>
+      <div class="col-75">
+        <input type="text" id="Pnumber" name="telefono">
+      </div>
   </div>
-</div>
-    <a href="user.html"><button class="btn-outline-success"> Usuario </button></a>
-	<br>
-		<footer class="footer-distributed">
+
+      <div>
+        <label for="email">Email</label>
+      <div class="col-75">
+        <input type="email" id="email" name="email">
+      </div>
+    </div>
+
+      <div>
+        <label for="about">Sobre mi</label>
+      <div class="col-75">
+        <input type="text" id="about" name="about" class="desc">
+      </div>
+    </div>
+
+     <input type="submit" value="Subir" id="search-btn" class="btn-outline-success">
+	</form>
+  </div>
+<br>
+  		<footer class="footer-distributed">
 
 			<div class="footer-left">
 
 				<img src="images/logo-01.png" class="footer-logo">
-
-				<p class="footer-links">
-					<a href="#">Instagram</a>
-					·
-					<a href="#">Inicio</a>
-					·
-					<a href="#">Agentes</a>
-					·
-					<a href="#">Nosotros</a>
-					·
-					<a href="#">Inmuebles</a>
-				</p>
-
 				<p class="footer-company-name">Keystone Inmobiliaria &copy; 2019</p>
 			</div>
 
@@ -117,6 +121,9 @@
 			</div>
 
 		</footer>
+
+
+<script type="text/javascript" href="javascript.js"></script>
 <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 </body>
 </html>

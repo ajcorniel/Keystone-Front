@@ -2,31 +2,45 @@
 <html>
 <head>
 	<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title></title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<title>Inmuebles</title>
 </head>
 <body>
-		<div class="header">
- 		<div class="socialMH">
-		<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
-		<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
+	<div class="header">
+		<div class="socialMH1">
+			<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
+			<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
 		</div>
-		<img src="images/banner2.jpg" style="height: 19rem;
-		                                     width: var(--percent-100);
-                                             margin: var(--rem-0);
-                                             padding: var(--rem-0);" >
+		<img src="images/logo-02.png" class="logo">
+
+		<ion-icon name="call" class="phone"></ion-icon>
+		<div class="contact-numbers">
+			<h4>
+				0261 7912068
+			</h4>
+			<h4>
+				0261 7933842
+			</h4>
+			<h4>
+				0261 9662206
+			</h4>
+		</div>
+
+		<img src="images/banner3.jpg" class="banner">
+
+		<nav class="navbar navbar-dark bg-primary">
+			<a href="index.html" class="nav-element">Inicio</a>
+			<a href="about.html" class="nav-element">Nosotros</a>
+			<a href="agentes.html" class="nav-element">Agentes</a>
+			<a href="login.html" class="nav-element">Ingresar</a>
+		</nav>
 	</div>
-		<ul class="nav">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="about.html">Nosotros</a></li>
-			<li><a href="agentes.html">Agentes</a></li>
-			<li class="ingresar"><a href="login.html">Ingresar</a></li>
-		</ul>
 	<br>
-	<br>
-	<br>
-	<div class="container">
-  <form action="action_page.php">
+	<div class="AAcontainer">
+  <form action="#">
     <div class="search">
       <div class="col-25">
         <label for="price">Precio máximo ($)</label>
@@ -36,9 +50,7 @@
       </div>
     </div>
     <div class="search">
-      <div class="col-25">
         <label for="m2">Metros cuadrados mínimos</label>
-      </div>
       <div class="col-75">
         <input type="number" id="metros2" name="Metros cuadrados">
       </div>
@@ -61,34 +73,33 @@
       <div class="col-75">
         <select id="type" name="type">
           <option value="casa">Casa</option>
+          <option value="townhouse">Townhouse</option>
           <option value="apartamento">Apartamento</option>
         </select>
       </div>
     </div>
+    <br>
     <div class="search">
-      <input type="submit" value="Buscar" id="search-btn">
+      <input type="submit" value="Buscar" id="search-btn" class="btn-outline-success">
     </div>
   </form>
 </div>
 <br>
-<br>
-<br>
-<br>
-	<div class="container">
-		<div class="row">
+	<div class="AAcontainer">
+		<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -96,24 +107,24 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+				<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -121,24 +132,24 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+				<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -146,24 +157,23 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+				<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -171,24 +181,23 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+				<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
 				<h5>
 					Apartamento
 				</h5>
@@ -196,24 +205,24 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+		<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -221,24 +230,24 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
+				<div class="row1">
 			<h3>
 				Penthouse en venta
 			</h3>
 			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
+			<div class="details1">
+				
 				<h5>
 					Dormitorios: 4
 				</h5>
 				<h5>
 					Baños: 3
 				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
+				
 				<h5>
 					Apartamento
 				</h5>
@@ -246,88 +255,11 @@
 					M2: 120
 				</h5>
 			</div>
-			<button class="details-btn">
+			<button class="btn-outline-secondary1">
 				Detalles
 			</button>
 		</div>
-				<div class="row">
-			<h3>
-				Penthouse en venta
-			</h3>
-			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
-				<h5>
-					Dormitorios: 4
-				</h5>
-				<h5>
-					Baños: 3
-				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
-				<h5>
-					Apartamento
-				</h5>
-				<h5>
-					M2: 120
-				</h5>
-			</div>
-			<button class="details-btn">
-				Detalles
-			</button>
-		</div>
-				<div class="row">
-			<h3>
-				Penthouse en venta
-			</h3>
-			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
-				<h5>
-					Dormitorios: 4
-				</h5>
-				<h5>
-					Baños: 3
-				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
-				<h5>
-					Apartamento
-				</h5>
-				<h5>
-					M2: 120
-				</h5>
-			</div>
-			<button class="details-btn">
-				Detalles
-			</button>
-		</div>
-				<div class="row">
-			<h3>
-				Penthouse en venta
-			</h3>
-			<img src="images/6_post.png" class="inmueble">
-			<div class="details">
-				<ion-icon name="bed" class="bed"></ion-icon>
-				<h5>
-					Dormitorios: 4
-				</h5>
-				<h5>
-					Baños: 3
-				</h5>
-				<ion-icon name="home" class="home"></ion-icon>
-				<h5>
-					Apartamento
-				</h5>
-				<h5>
-					M2: 120
-				</h5>
-			</div>
-			<div>
-				<button class="details-btn" onclick="">
-					Detalles
-				</button>
-			</div>
-		</div>
-<div id="myModal" class="modal">
+<div id="myModal" class="modal1">
 	<div id ="modal-content" class="animated bounceInDown">
 		<span class="close">&times;</span>
 		<div class="centered">
@@ -418,6 +350,14 @@
 			</h5>
 		</div>
 		<div class="info">
+			<h5>
+				Codigo MLS
+			</h5>
+			<h5>
+				282827
+			</h5>
+		</div>
+		<div class="info">
 				<p id="description">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -439,62 +379,77 @@
 			</div>
 		</div>
 		</div>
+	</div>
 </div>
+	<button id="myBtn">Modal</button>
+<br>
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
 </div>
+		<footer class="footer-distributed">
 
-<br>
-<br>
-<br>
-<br>
-<br>
-	<footer>
-		<img src="">
-		<div class="container">
-			<img src="images/logo-02.png" class="footer-img">
-			<div class="flex-column">
-				<h3>
-					<a href="">
-						Nosotros
-					</a>
-				</h3>
-				<br>
-				<h3>
-					<a href="">
-						Contacto
-					</a>
-				</h3>
-				<br>
-				<h3>
-					<a href="">
-						Inmuebles
-					</a>
-				</h3>
-				<br>
-				<h3>
-					<a href="">
-						Agentes
-					</a>
-				</h3>
+			<div class="footer-left">
+
+				<img src="images/logo-01.png" class="footer-logo">
+
+				<p class="footer-links">
+					<a href="#">Instagram</a>
+					·
+					<a href="#">Inicio</a>
+					·
+					<a href="#">Agentes</a>
+					·
+					<a href="#">Nosotros</a>
+					·
+					<a href="#">Inmuebles</a>
+				</p>
+
+				<p class="footer-company-name">Keystone Inmobiliaria &copy; 2019</p>
 			</div>
-			<div class="flex-column">
-				<h3>
-					Siguenos
-				</h3>
-					<div class="container">
-						<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
-						<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
-					</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Hotel del lago, avenida El Milagro</span>Zulia, Maracaibo</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>0414 6301822</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">contacto@keystoneinmobiliaria.com</a></p>
+				</div>
+
 			</div>
-			<div>
-				<h3>
-					Contactanos
-				</h3>
-					<h3>
-						keystoneinmobiliaria@gmail.com
-					</h3>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Sobre nosotros</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="socialMH2">
+
+			<a href=""><ion-icon name="logo-instagram" class="socialM"></ion-icon></a>
+			<a href=""><ion-icon name="logo-facebook" class="socialM"></ion-icon></a>
+
+				</div>
+
 			</div>
-		</div>
-	</footer>
+
+		</footer>
 <script type="text/javascript" href="javascript.js"></script>
 <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
 </body>
