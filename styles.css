@@ -321,9 +321,9 @@ div.column > h5 > a {
   justify-content: space-around;
   flex-direction: flex-start;
   width: 100%;
-  top: 80%;
   padding: 0;
   margin: 0;
+  color: #0b109f !important;
 }
 
 .contact-numbers {
@@ -352,11 +352,31 @@ div.column > h5 > a {
   vertical-align: top;
 }
 
+.default-button {
+  color: white;
+  background-color: #0b109f;
+  width: 80%;
+  border: none;
+  margin-left: 10%;
+  margin-bottom: 5px;
+  border-radius: 7%;
+}
+
+.verMas {
+  color: white;
+  background-color: #0b109f;
+  justify-content: center;
+  margin-left: 8%;
+  width: 20%;
+  height: 30px;
+  border: none;
+  margin-bottom: 1%;
+  border-radius: 7%;
+}
+
 .gold-bar {
   width: var(--percent-100);
   height: 25px;
- margin-bottom: 30px;
-  margin-top: 20px;
   background-color: var(--gold);
   vertical-align: top;
 }
@@ -478,14 +498,12 @@ footer {
 }
 
 .slideshow-container {
+  padding-top: 7px;
   display: flex;
   align-items: center;
-  max-width: 1000px;
   position: relative;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  width: 100%;
 }
 
 .inter-section {
@@ -504,7 +522,7 @@ margin-bottom: 5%;
 }
 
 .c-img {
-  height: 500px;
+  height: 600px;
   width: 100%;
 }
 
@@ -1631,7 +1649,7 @@ input[type=submit] {
 }
 
 .footer-distributed{
-  background-color: #292c2f;
+  background-color: #0b109f;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
